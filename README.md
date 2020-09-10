@@ -6,12 +6,6 @@
 # <img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"> Patrick Gatewood (he/him)
 > It's a-me!
 
-<!--<a href="https://github.com/pg8wood/website">
-    <img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/favicon.png" width="25%"/>
-</a>-->
-
-<br />
-
 ## Here's some of my favorites
 
 <!-- CSS, make dynamic? -->
