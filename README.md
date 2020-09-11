@@ -6,7 +6,9 @@
 # <img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"> Patrick Gatewood (he/him)
 > It's a-me!
 
-## Here's some of my favorites
+
+
+## Some of my favorite recent projects
 
 <!-- CSS, make dynamic? -->
 <div display="inline-block">
