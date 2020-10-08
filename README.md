@@ -3,12 +3,12 @@
 - Most recent star(s)?
 -->
 
-# <img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"> Patrick Gatewood (he/him)
+# <a href="https://patrickgatewood.com"><img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"></a> Patrick Gatewood (he/him)
 > It's a-me!
 
+Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some cool stuff.
 
-
-## Some of my favorite recent projects
+## Some of my recent favorites:
 
 <!-- CSS, make dynamic? -->
 <div display="inline-block">
