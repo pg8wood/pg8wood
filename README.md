@@ -11,7 +11,7 @@ Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some co
 ## Some of my recent favorites:
 
 <!-- CSS, make dynamic? -->
-<div display="inline-block">
+<div display="inline">
   <a href="https://github.com/willowtreeapps/vocable-ios">
     <img alt="Vocable iOS" src="https://lh3.googleusercontent.com/NzoJUjzKIuilcA8T1cp2RGvcgd5bX7IZaD9wl75GOpbZS_Zd7U2eIpHcFkrxsrkSsB8" width="100"/>
   </a>
@@ -21,7 +21,7 @@ Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some co
   </a>
   
    <a href="https://github.com/pg8wood/wwdc-2020">
-    <img alt="Charles Janitor" src="images/wwdc2020.png" width="100"/>
+    <img alt="WWDC 2020 app" src="images/wwdc2020.png" height="100/>
   </a>
   
   <a href="https://github.com/pg8wood/discord-voice-assistant-bot">
