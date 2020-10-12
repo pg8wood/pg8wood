@@ -21,7 +21,7 @@ Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some co
   </a>
   
    <a href="https://github.com/pg8wood/wwdc-2020">
-    <img alt="WWDC 2020 app" src="images/wwdc2020.png" height="100/>
+    <img alt="WWDC 2020 app" src="images/wwdc2020.png" height="100"/>
   </a>
   
   <a href="https://github.com/pg8wood/discord-voice-assistant-bot">
