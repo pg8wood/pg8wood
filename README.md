@@ -4,7 +4,7 @@
 -->
 
 # <a href="https://patrickgatewood.com"><img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"></a> Patrick Gatewood (he/him)
-> It's a-me!
+> Probably clacking on his keyboard at 2 AM
 
 Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some cool stuff.
 
@@ -16,12 +16,16 @@ Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some co
     <img alt="Vocable iOS" src="https://lh3.googleusercontent.com/NzoJUjzKIuilcA8T1cp2RGvcgd5bX7IZaD9wl75GOpbZS_Zd7U2eIpHcFkrxsrkSsB8" width="100"/>
   </a>
   
+  <a href="https://github.com/pg8wood/changelog-generator">
+    <img alt="Changelog Generator" src="https://github.com/pg8wood/pg8wood/blob/main/images/changelog.png" height="100"/>
+  </a>
+  
   <a href="https://github.com/pg8wood/OSRS-touch-bar">
     <img alt="OSRS Touch Bar" src="https://github.com/pg8wood/OSRS-touch-bar/blob/master/docs/appIcon.png" width="100"/>
   </a>
   
    <a href="https://github.com/pg8wood/wwdc-2020">
-    <img alt="WWDC 2020 app" src="images/wwdc2020.png" height="100"/>
+    <img alt="WWDC 2020 app" src="https://github.com/pg8wood/pg8wood/blob/main/images/wwdc2020.png" height="100"/>
   </a>
   
   <a href="https://github.com/pg8wood/discord-voice-assistant-bot">
