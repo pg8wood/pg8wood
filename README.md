@@ -35,8 +35,4 @@ Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some co
   <a href="https://github.com/pg8wood/charles-janitor">
     <img alt="Charles Janitor" src="https://github.com/pg8wood/charles-janitor/blob/master/Charles%20Janitor/Assets.xcassets/AppIcon.appiconset/cleaning-kit@512.png" width="100"/>
   </a>
- 
-  <a href="https://github.com/pg8wood/ARKit-Research">
-    <img alt="ARKit Research" src="https://upload.wikimedia.org/wikipedia/commons/2/21/ARKit.png" width="100"/>
-  </a>
 </div>
