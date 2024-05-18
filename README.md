@@ -6,8 +6,6 @@
 # <a href="https://patrickgatewood.com"><img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"></a> Patrick Gatewood (he/him)
 > Probably clacking on his keyboard at 2 AM
 
-Check out my [blog](https://blog.patrickgatewood.com). I'm usually up to some cool stuff.
-
 ## Some of my favorites:
 
 <!-- CSS, make dynamic? -->
