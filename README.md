@@ -4,7 +4,11 @@
 -->
 
 <!-- 🙏 https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/-->
-![This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔](svgHtmlHack.svg) 
+
+<div align="center">
+  <img src="svgHtmlHack.svg" alt="This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔"/>
+</div>
+
 
 
 # 🥇 Project Hall of Fame
