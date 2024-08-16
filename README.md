@@ -6,12 +6,11 @@
 <!-- 🙏 https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/-->
 ![This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔](svgHtmlHack.svg) 
 
-# <a href="https://patrickgatewood.com"><img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"></a> Patrick Gatewood (he/him)
-> Probably clacking on his keyboard at 2 AM
 
-## Some of my favorites:
+# 🥇 Project Hall of Fame
+> These are my favorite non-enterprise projects. For questions about my enterprise work, please [request my resume](mailto:patrick@patrickgatewood.com?subject=Resume Request from GitHub README).
 
-<div style="display:inline;">
+<div style="display:inline; text-decoration:none;">
   <a href="https://apps.apple.com/us/app/emochi-lighting-fast-emojis/id6450970369?mt=12">
     	<img alt="Emochi icon" src="images/emochi.png" width="100"/>
   </a>

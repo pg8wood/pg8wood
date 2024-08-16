@@ -14,10 +14,14 @@
       }
 
       .body {
-        --color-main: #5448C8;
-        --color-primary: #EE4266;
-        --color-secondary: #FBFFFE
+        --color-main: white;
+        --color-primary: #9B5DE5;
+        --color-secondary: #EE4266;
         --color-background: #171123;
+        --color-primary-text: white;
+        --color-secondary-text: #ad87e6;
+        --color-tertiary-text: #a45bb9;
+        --color-quaternary-text: #d1537a;
 
         height: 400px;
         width: 100%;
@@ -30,23 +34,31 @@
         animation: border 5s linear infinite;
         background-size: 200% 200%;
         background-position: 0 0;
-        border: 24px solid;
-        border-color: var(--color-background);
+        border-radius: 15px;
       }
 
       .container {
+        border-radius: 45px;
         background: var(--color-background);
         height: calc(100% - 10px);
         width: calc(100% - 10px);
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 48px 32px 48px 32px;
+      }
+
+      .items {
+        display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
       }
 
       .title {
+        color: var(--color-primary-text);
         text-transform: none;
-        color:  var(--color-main);
       }
 
       h1 {
@@ -55,9 +67,11 @@
         font-family: "Open Sans", sans-serif;
         text-align: center;
       }
+
       h1 a {
         display: block;
       }
+
       h1 a span {
         display: block;
         font-family: "Spectral", Helvetica, sans-serif;
@@ -67,16 +81,21 @@
       h1 a span em {
         display: block;
         color: var(--color-main);
-        margin-bottom: 6px;
         animation: intro 1.5s cubic-bezier(0.5, 0, 0.25, 1.3) -1s 1;
       }
 
-      .items {
-        margin-top: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+      button {
+        background-color: var(--color-primary);
+        border: none;
+        border-radius: 15px;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
       }
 
       ul {
@@ -86,21 +105,26 @@
         font-weight: 700;
         font-family: "Spectral", sans-serif;
       }
+
       ul li {
         display: flex;
         letter-spacing: 0.125vw;
       }
 
       ul li:nth-child(1) {
-        color: var(--color-primary);
+        color: var(--color-primary-text);
       }
 
       ul li:nth-child(2) {
-        color: var(--color-secondary);
+        color: var(--color-secondary-text);
       }
 
-      ul li:nth-child(3) {
-        color: var(--color-link);
+       ul li:nth-child(3) {
+        color: var(--color-tertiary-text);
+      }
+
+      ul li:nth-child(4) {
+        color: var(--color-quaternary-text);
       }
 
       ul li a {
@@ -114,41 +138,12 @@
         color: var(--color-link);
       }
 
-      .hi {
-        display: inline-block;
-        transform-origin: 70% 70%;
-        animation: hi 3s linear -2s infinite;
-      }
-
       @keyframes border {
         0% { background-position: 0 0; }
         20% { background-position: 100% 0; }
         40% { background-position: 100% 100%; }
         60% { background-position: 0 100%; }
         100% { background-position: 0 0; }
-      }
-
-      @keyframes hi {
-        25% { transform: rotate(0deg); }
-        30% { transform: rotate(15deg); }
-        35% { transform: rotate(0deg); }
-        40% { transform: rotate(15deg); }
-        45% { transform: rotate(0deg); }
-        80% { transform: rotate(0deg); }
-        85% { transform: rotate(15deg); }
-        90% { transform: rotate(0deg); }
-        95% { transform: rotate(15deg); }
-        100% { transform: rotate(0deg); }
-      }
-
-      @keyframes intro {
-        0%, 75% { transform: translateX(-100vw); }
-        100% { transform: translateX(0); }
-      }
-
-      @keyframes fade {
-        0%, 75% { opacity: 0; }
-        100% { opacity: 1; }
       }
 
       @media (prefers-color-scheme: light) {
@@ -159,15 +154,15 @@
           --color-background: #ffffff;
           --color-link: #00BBF9;
           --color-link-active: #F15BB5;
+          --color-primary-text: #9B5DE5;
+          --color-secondary-text: #ad87e6;
+          --color-tertiary-text: #F15BB5;
+          --color-quaternary-text: #00BBF9;
         }
       }
 
       @media (prefers-reduced-motion) {
         .body {
-          animation: none;
-        }
-
-        .hi {
           animation: none;
         }
 
@@ -186,7 +181,7 @@
     <div class='body'>
       <div class='container'>
         <h1 class="title">
-          <a href="https://github.com/nikolalsvk">
+          <a href="https://patrickgatewood.com">
             <span>Patrick Gatewood</span>
           </a>
         </h1>
@@ -197,10 +192,9 @@
             <li>🥳&#160;&#160;Technology Enthusiast</li>
             <li>👨‍💻&#160;&#160;Probably clacking on his keyboard at 2 AM</li>
         </ul>
-          <ul>
-            <li><a href="mailto:patrick@patrickgatewood.com" role="button"><span class='hi'>👋</span></a></li>
-          </ul>
+        
         </section>
+        <a href="mailto:patrick@patrickgatewood.com"><button>✉️&#160;&#160;say hello</button></a>
       </div>
     </div>
   </div>
