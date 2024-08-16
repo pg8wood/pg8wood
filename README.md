@@ -3,26 +3,39 @@
 - Most recent star(s)?
 -->
 
-# <a href="https://patrickgatewood.com"><img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"></a> Patrick Gatewood (he/him)
-> Probably clacking on his keyboard at 2 AM
+<!-- 🙏 https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/-->
 
-## Some of my favorites:
+<div align="center">
+  <img src="svgHtmlHack.svg" alt="This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔"/>
+</div>
 
-<!-- CSS, make dynamic? -->
-<div display="inline">
+
+
+# 🥇 Project Hall of Fame
+> These are my favorite non-enterprise projects. For questions about my enterprise work, please [request my resume](mailto:patrick@patrickgatewood.com?subject=Resume Request from GitHub README).
+
+<div style="display:inline; text-decoration:none;">
+  <a href="https://apps.apple.com/us/app/emochi-lighting-fast-emojis/id6450970369?mt=12">
+    	<img alt="Emochi icon" src="images/emochi.png" width="100"/>
+  </a>
+  
   <a href="https://github.com/willowtreeapps/vocable-ios">
-    <img alt="Vocable iOS" src="https://lh3.googleusercontent.com/NzoJUjzKIuilcA8T1cp2RGvcgd5bX7IZaD9wl75GOpbZS_Zd7U2eIpHcFkrxsrkSsB8" width="100"/>
+    <img alt="Vocable iOS" src="images/vocable.png" width="100"/>
+  </a>
+  
+  <a href="https://apps.apple.com/us/app/recipe-nabber/id1602584893">
+    <img alt="Recipe Nabber icon" src="images/recipe-nabber.png" width="100"/>
   </a>
   
   <a href="https://github.com/pg8wood/changelog-generator">
-    <img alt="Changelog Generator" src="https://github.com/pg8wood/pg8wood/blob/main/images/changelog.png" height="100"/>
+    <img alt="Changelog Generator" src="images/changelog.png" height="100"/>
   </a>
   
   <a href="https://github.com/pg8wood/OSRS-touch-bar">
-    <img alt="OSRS Touch Bar" src="https://github.com/pg8wood/OSRS-touch-bar/blob/master/docs/appIcon.png" width="100"/>
+    <img alt="OSRS Touch Bar" src="images/osrs-touch-bar.png" width="100"/>
   </a>
   
   <a href="https://github.com/pg8wood/charles-janitor">
-    <img alt="Charles Janitor" src="https://github.com/pg8wood/charles-janitor/blob/master/Charles%20Janitor/Assets.xcassets/AppIcon.appiconset/cleaning-kit@512.png" width="100"/>
+    <img alt="Charles Janitor" src="images/charles-janitor.png" width="100"/>
   </a>
 </div>
