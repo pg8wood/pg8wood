@@ -23,7 +23,7 @@
         --color-tertiary-text: #a45bb9;
         --color-quaternary-text: #d1537a;
 
-        height: 400px;
+        height: 300px;
         width: 100%;
         text-transform: uppercase;
         display: flex;
@@ -44,7 +44,8 @@
         width: calc(100% - 10px);
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: center;
+        gap: 32px;
         align-items: center;
         padding: 48px 32px 48px 32px;
       }
@@ -192,9 +193,7 @@
             <li>🥳&#160;&#160;Technology Enthusiast</li>
             <li>👨‍💻&#160;&#160;Probably clacking on his keyboard at 2 AM</li>
         </ul>
-        
         </section>
-        <a href="mailto:patrick@patrickgatewood.com"><button>✉️&#160;&#160;say hello</button></a>
       </div>
     </div>
   </div>
