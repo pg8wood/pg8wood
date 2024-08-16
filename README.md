@@ -4,7 +4,7 @@
 -->
 
 <!-- 🙏 https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/-->
-![This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔](svgHtmlHack.svg)   
+![This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔](svgHtmlHack.svg) 
 
 # <a href="https://patrickgatewood.com"><img src="https://github.com/pg8wood/website/blob/master/public_html/images/favicons/android-chrome-192x192.png" height=40 align="left"></a> Patrick Gatewood (he/him)
 > Probably clacking on his keyboard at 2 AM
