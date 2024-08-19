@@ -12,7 +12,7 @@
 
 
 # 🥇 Project Hall of Fame
-> These are my favorite non-enterprise projects. For questions about my enterprise work, please [request my resume](mailto:patrick@patrickgatewood.com?subject=Resume Request from GitHub README).
+> These are my favorite non-enterprise projects. For questions about my enterprise work, please [request my resume](mailto:patrick@patrickgatewood.com?subject=Resume%20Request%20from%20GitHub%20README).
 
 <div style="display:inline; text-decoration:none;">
   <a href="https://apps.apple.com/us/app/emochi-lighting-fast-emojis/id6450970369?mt=12">
