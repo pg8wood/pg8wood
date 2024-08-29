@@ -6,7 +6,9 @@
 <!-- 🙏 https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/-->
 
 <div align="center">
-  <img src="svgHtmlHack.svg" alt="This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔"/>
+  <a href="https://patrickgatewood.com">
+    <img src="svgHtmlHack.svg" alt="This is a sneaky hack to render HTML in a GitHub README. If you're seeing this, they've fixed the exploit 😔"/>
+  </a>
 </div>
 
 
