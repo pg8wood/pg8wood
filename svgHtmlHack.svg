@@ -8,7 +8,7 @@
       <stop offset="100%" stop-color="#04070f"/>
     </radialGradient>
 
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+    <filter id="glow" filterUnits="userSpaceOnUse" x="-200" y="-200" width="1000" height="800">
       <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
@@ -21,7 +21,7 @@
     </filter>
   </defs>
 
-  <style>
+    <style>
     /* General */
     .bg { fill: url(#spaceGradient); }
     .star { fill: #ffffff; opacity: 0.9; }
@@ -34,9 +34,9 @@
     /* Accessibility/Reduced motion */
     @media (prefers-reduced-motion: reduce) {
       .no-reduce { animation: none !important; }
-    }
-  </style>
-
+      }
+    </style>
+   
   <!-- Background -->
   <g id="background">
     <rect class="bg" x="0" y="0" width="600" height="400" rx="12"/>
@@ -124,14 +124,13 @@
       <animate attributeName="opacity" values="0.15;0.8;0.15" dur="4.2s" begin="-2.6s" repeatCount="indefinite"/>
     </circle>
   </g>
-
-  <!-- Rare events: Shooting star and drifting satellite -->
+    <!-- Rare events: Shooting star and drifting satellite -->
   <g id="rare-events">
     <!-- Shooting star -->
     <g id="shooting-star" opacity="0" filter="url(#glow)">
-      <line x1="0" y1="0" x2="18" y2="0" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-      <animate id="shootOpacity" attributeName="opacity" values="0;1;0" dur="1.3s" begin="7s; 33s; 61s; 97s"/>
-      <animateMotion id="shootPass" dur="1.3s" begin="7s; 33s; 61s; 97s" path="M -60 90 L 660 -40" rotate="auto"/>
+      <line x1="0" y1="0" x2="28" y2="0" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+      <animate attributeName="opacity" values="0;1;0" dur="1.5s" begin="3s; 12s; 20s; 35s"/>
+      <animateMotion dur="1.5s" begin="3s; 33s; 61s; 97s" path="M -80 140 L 680 20" rotate="auto"/>
     </g>
 
     <!-- Satellite (slow diagonal drift) -->
@@ -146,7 +145,7 @@
       <!-- Solar panels -->
       <rect x="-18" y="-3.5" width="10" height="7" rx="1" fill="#6aa3ff" opacity="0.9"/>
       <rect x="8" y="-3.5" width="10" height="7" rx="1" fill="#6aa3ff" opacity="0.9"/>
-      <animateTransform attributeName="transform" type="translate" from="-80 420" to="680 -50" dur="120s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="translate" from="-10 420" to="680 -50" dur="120s" repeatCount="indefinite"/>
       <animateTransform attributeName="transform" type="rotate" values="-6 0 0; 6 0 0; -6 0 0" dur="24s" repeatCount="indefinite" additive="sum"/>
     </g>
   </g>
