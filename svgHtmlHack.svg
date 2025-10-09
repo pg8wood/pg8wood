@@ -278,13 +278,13 @@
       <!-- Solar panels -->
       <rect x="-18" y="-3.5" width="10" height="7" rx="1" fill="#6aa3ff" opacity="0.9"/>
       <rect x="8" y="-3.5" width="10" height="7" rx="1" fill="#6aa3ff" opacity="0.9"/>
-      <animateTransform attributeName="transform" type="translate" from="-10 420" to="680 -50" dur="120s" repeatCount="indefinite"/>
-      <animateTransform attributeName="transform" type="rotate" values="-6 0 0; 6 0 0; -6 0 0" dur="24s" repeatCount="indefinite" additive="sum"/>
+      <animateTransform attributeName="transform" type="translate" from="-50 72" to="680 -50" dur="120s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="-16 0 0; 16 0 0; -16 0 0" dur="24s" repeatCount="indefinite" additive="sum"/>
     </g>
   </g>
 
   <!-- Name and Tagline -->
-  <g id="header-text" transform="translate(0, 95)">
+  <g id="header-text" transform="translate(0, 90)">
     <text
       x="50%"
       text-anchor="middle"
