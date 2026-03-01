@@ -103,8 +103,22 @@ I build software in three realms:
   <tr>
     <td width="50%" valign="top">
       <h3>slog</h3>
-      <p>Simulator login automation utility for faster iOS testing workflows.</p>
+      <p>Stop the CLI login slog. Automate your iOS Simulator login flows and get straight to testing.</p>
       <p><a href="https://github.com/pg8wood/slog">View on GitHub</a></p>
+    </td>
+    <td width="50%" valign="top">
+      <img src="images/changelog.png" alt="Changelog Generator icon" width="64" height="64"/><br/>
+      <h3>Changelog Generator</h3>
+      <p>Curbs cumbersome changelog conflicts. Stop wrangling merge conflicts and get back to actual engineering.</p>
+      <p><a href="https://github.com/pg8wood/changelog-generator">View on GitHub</a></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <img src="images/osrs-touch-bar.png" alt="OSRS Touch Bar icon" width="95" height="64"/><br/>
+      <h3>OSRS Touch Bar</h3>
+      <p>Level up your efficiency. Adds Touch Bar support to any Old School RuneScape client.</p>
+      <p><a href="https://github.com/pg8wood/OSRS-touch-bar">View on GitHub</a></p>
     </td>
     <td width="50%" valign="top">
     </td>
