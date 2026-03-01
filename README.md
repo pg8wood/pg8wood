@@ -20,6 +20,7 @@ Patrick Gatewood is a **Senior Software Engineer** specializing in the iOS ecosy
 
 ### 🤖 Robot Hand, LLC
 Founder and solo engineer of an independent software studio focused on well-crafted mobile utilities:
+- **Constellation Quest**: Co-defined and solo-engineered an offline-first scavenger hunt PWA for GRiZ's Seven Stars Festival (~23,500 attendees). Led both product direction and on-site execution (signage, reward mechanics, and interaction flows) for zero-connectivity conditions. Built with Vite, TypeScript, and localStorage; shipped ahead of schedule with zero downtime and became a fan-favorite with organic Reddit engagement. [Play here](https://quest.sevenstarsfest.com/) *(password: `Quest`)*.
 - **Chosen One**: fingerchooser.app - A lightning-fast social utility for game nights. Featured custom haptics and multi-touch tracking.
 - **Emochi**: A system-wide emoji productivity utility for macOS.
 - **Recipe Nabber**: Privacy-focused Safari extension for distraction-free cooking.
