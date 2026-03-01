@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="1500" viewBox="0 0 800 1500" role="img" aria-label="Patrick Gatewood's Interstellar Portfolio">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="1550" viewBox="0 0 800 1550" role="img" aria-label="Patrick Gatewood's Interstellar Portfolio">
   <title>Patrick Gatewood • Cosmic Engineer Portfolio</title>
 
   <defs>
@@ -16,242 +16,176 @@
       </feMerge>
     </filter>
 
-    <filter id="cardGlow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"/>
-      <feOffset in="blur" dx="0" dy="0" result="offsetBlur"/>
-      <feFlood flood-color="#5448c8" flood-opacity="0.3" result="color"/>
-      <feComposite in="color" in2="offsetBlur" operator="in" result="glow"/>
+    <filter id="nameGlow" filterUnits="userSpaceOnUse" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur"/>
       <feMerge>
-        <feMergeNode in="glow"/>
+        <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Punchy Purple Gradient -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
   </defs>
 
   <style>
-    @keyframes twinkle {
-      0%, 100% { opacity: 0.3; transform: scale(0.8); }
-      50% { opacity: 1; transform: scale(1.1); }
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0px) rotate(0deg); }
-      50% { transform: translateY(-10px) rotate(1deg); }
-    }
-    @keyframes pulse-icon {
-      0%, 100% { filter: drop-shadow(0 0 5px rgba(165, 180, 252, 0.4)); }
-      50% { filter: drop-shadow(0 0 15px rgba(165, 180, 252, 0.8)); }
-    }
-
     .bg { fill: url(#spaceGradient); }
     .star { fill: #ffffff; }
-    .twinkle { animation: twinkle var(--d) ease-in-out infinite; }
-    
-    .content-body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      color: #e6edf3;
-      padding: 40px;
-      margin: 0;
-    }
-
-    .header { text-align: center; margin-bottom: 60px; }
-    .header h1 { 
-      font-size: 48px; 
-      margin: 0; 
-      background: linear-gradient(135deg, #a5b4fc 0%, #6366f1 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.3));
-    }
-    .header p { font-size: 18px; color: #94a3b8; margin-top: 10px; }
-    .header a { color: #818cf8; text-decoration: none; font-weight: 600; }
-
-    .section-title {
-      font-size: 24px;
-      margin: 40px 0 20px 0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #f8fafc;
-      border-bottom: 2px solid rgba(255,255,255,0.1);
-      padding-bottom: 10px;
-    }
-
-    .card-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    .realm-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 15px;
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 24px;
-      position: relative;
-    }
-
-    .realm-card { text-align: center; padding: 20px 10px; }
-    .realm-icon { font-size: 32px; margin-bottom: 12px; display: block; }
-    .realm-title { font-weight: 700; font-size: 16px; color: #f1f5f9; display: block; margin-bottom: 4px; }
-    .realm-desc { font-size: 13px; color: #94a3b8; }
-
-    .ent-card { display: flex; align-items: flex-start; gap: 15px; }
-    .ent-logo { width: 48px; height: 48px; border-radius: 8px; flex-shrink: 0; }
-    .ent-info h3 { margin: 0; font-size: 18px; color: #f8fafc; }
-    .ent-info p { margin: 8px 0 0 0; font-size: 14px; color: #94a3b8; line-height: 1.5; }
-
-    .project-card {
-      background: rgba(13, 17, 23, 0.6);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 20px;
-    }
-    .project-header { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
-    .project-icon { width: 56px; height: 56px; border-radius: 14px; object-fit: cover; }
-    .project-title { font-size: 18px; margin: 0; color: #fff; }
-    .project-desc { font-size: 14px; color: #94a3b8; line-height: 1.4; margin-bottom: 15px; }
-    .project-links { display: flex; gap: 10px; align-items: center; }
-    .project-links a { font-size: 12px; color: #818cf8; text-decoration: none; font-weight: 600; }
-    .app-store-badge { height: 28px; }
+    .header-name { fill: url(#textGradient); font-family: sans-serif; font-weight: bold; font-size: 48px; }
+    .header-tagline { fill: #94a3b8; font-family: sans-serif; font-size: 18px; }
+    .section-title { fill: #f8fafc; font-family: sans-serif; font-weight: bold; font-size: 24px; }
+    .card-bg { fill: rgba(255, 255, 255, 0.03); stroke: rgba(255, 255, 255, 0.1); stroke-width: 1; }
+    .card-title { fill: #f1f5f9; font-family: sans-serif; font-weight: bold; font-size: 16px; }
+    .card-desc { fill: #94a3b8; font-family: sans-serif; font-size: 13px; }
+    .project-title { fill: #ffffff; font-family: sans-serif; font-weight: bold; font-size: 18px; }
+    .project-desc { fill: #94a3b8; font-family: sans-serif; font-size: 14px; }
+    .link-text { fill: #818cf8; font-family: sans-serif; font-weight: bold; font-size: 12px; }
   </style>
 
   <!-- Background Layer -->
-  <rect class="bg" width="100%" height="100%"/>
+  <rect class="bg" width="100%" height="100%" rx="25"/>
   
-  <!-- Drifting Background Elements -->
-  <g opacity="0.15" filter="url(#glow)">
+  <!-- Drifting Background Stars -->
+  <g opacity="0.3" filter="url(#glow)">
     <circle class="star" cx="100" cy="150" r="1.5"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
     <circle class="star" cx="700" cy="400" r="1.2"><animate attributeName="opacity" values="0.1;0.8;0.1" dur="4s" repeatCount="indefinite"/></circle>
     <circle class="star" cx="400" cy="800" r="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="5s" repeatCount="indefinite"/></circle>
-    <!-- Add more scattered stars for height -->
     <circle class="star" cx="200" cy="1100" r="1"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.5s" repeatCount="indefinite"/></circle>
-    <circle class="star" cx="600" cy="1300" r="1.5"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="4.5s" repeatCount="indefinite"/></circle>
+    <circle class="star" cx="600" cy="1400" r="1.5"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="4.5s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Project Logos Drifting Behind Content -->
-  <g opacity="0.1">
+  <!-- Project Logos Drifting in the Void -->
+  <g opacity="0.08">
     <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/emochi.png" x="50" y="300" width="120" height="120">
       <animateTransform attributeName="transform" type="translate" values="0 0; 20 -20; 0 0" dur="40s" repeatCount="indefinite" additive="sum"/>
-      <animateTransform attributeName="transform" type="rotate" values="0 110 360; 5 110 360; 0 110 360" dur="60s" repeatCount="indefinite" additive="sum"/>
     </image>
-    <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/recipe-nabber.png" x="600" y="700" width="100" height="100">
+    <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/recipe-nabber.png" x="600" y="700" width="110" height="110">
       <animateTransform attributeName="transform" type="translate" values="0 0; -30 20; 0 0" dur="45s" repeatCount="indefinite" additive="sum"/>
     </image>
-    <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/chosen-one.png" x="100" y="1100" width="110" height="110">
+    <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/chosen-one.png" x="100" y="1200" width="130" height="130">
       <animateTransform attributeName="transform" type="translate" values="0 0; 15 30; 0 0" dur="50s" repeatCount="indefinite" additive="sum"/>
     </image>
   </g>
 
-  <foreignObject x="0" y="0" width="800" height="1500">
-    <div xmlns="http://www.w3.org/1999/xhtml" class="content-body">
-      
-      <div class="header">
-        <h1>Patrick Gatewood</h1>
-        <p>Enterprise iOS engineer by day, indie app maker by night.</p>
-        <p>Founder of <strong>Robot Hand, LLC</strong> • <a href="https://patrickgatewood.com">patrickgatewood.com</a></p>
-      </div>
+  <!-- Header Section -->
+  <g transform="translate(400, 100)">
+    <text text-anchor="middle" class="header-name" filter="url(#nameGlow)">Patrick Gatewood</text>
+    <text y="40" text-anchor="middle" class="header-tagline">Enterprise iOS engineer by day, indie app maker by night.</text>
+    <text y="70" text-anchor="middle" class="header-tagline">Founder of <tspan font-weight="bold" fill="#fff">Robot Hand, LLC</tspan></text>
+  </g>
 
-      <div class="section-title">🔨 How I Build</div>
-      <div class="realm-grid">
-        <div class="card realm-card">
-          <span class="realm-icon">🏢</span>
-          <span class="realm-title">At Scale</span>
-          <span class="realm-desc">Systems used by millions (Square, WillowTree)</span>
-        </div>
-        <div class="card realm-card">
-          <span class="realm-icon">🤖</span>
-          <span class="realm-title">Independently</span>
-          <span class="realm-desc">Crafting tools at Robot Hand, LLC</span>
-        </div>
-        <div class="card realm-card">
-          <span class="realm-icon">🧪</span>
-          <span class="realm-title">Personally</span>
-          <span class="realm-desc">Well-crafted apps that keep me curious</span>
-        </div>
-      </div>
+  <!-- How I Build Section -->
+  <g transform="translate(40, 220)">
+    <line x1="0" y1="0" x2="720" y2="0" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+    <text y="40" class="section-title">🔨 How I Build</text>
+    
+    <g transform="translate(0, 65)">
+      <rect width="230" height="120" rx="16" class="card-bg"/>
+      <text x="115" y="40" text-anchor="middle" font-size="32">🏢</text>
+      <text x="115" y="75" text-anchor="middle" class="card-title">At Scale</text>
+      <text x="115" y="95" text-anchor="middle" class="card-desc">Systems used by millions</text>
+    </g>
+    
+    <g transform="translate(245, 65)">
+      <rect width="230" height="120" rx="16" class="card-bg"/>
+      <text x="115" y="40" text-anchor="middle" font-size="32">🤖</text>
+      <text x="115" y="75" text-anchor="middle" class="card-title">Independently</text>
+      <text x="115" y="95" text-anchor="middle" class="card-desc">Crafting tools at Robot Hand</text>
+    </g>
+    
+    <g transform="translate(490, 65)">
+      <rect width="230" height="120" rx="16" class="card-bg"/>
+      <text x="115" y="40" text-anchor="middle" font-size="32">🧪</text>
+      <text x="115" y="75" text-anchor="middle" class="card-title">Personally</text>
+      <text x="115" y="95" text-anchor="middle" class="card-desc">Well-crafted apps &amp; tools</text>
+    </g>
+  </g>
 
-      <div class="section-title">💼 Enterprise Work</div>
-      <div class="card-grid">
-        <div class="card ent-card">
-          <img class="ent-logo" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/square-logo.png" alt="Square"/>
-          <div class="ent-info">
-            <h3>Square</h3>
-            <p>Core iOS infrastructure, AI tooling, and transaction security for millions of sellers.</p>
-          </div>
-        </div>
-        <div class="card ent-card">
-          <img class="ent-logo" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/willowtree-logo.svg" alt="WillowTree"/>
-          <div class="ent-info">
-            <h3>WillowTree</h3>
-            <p>Architecting digital experiences for FOX, PepsiCo, and other global brands.</p>
-          </div>
-        </div>
-      </div>
+  <!-- Enterprise Work Section -->
+  <g transform="translate(40, 480)">
+    <line x1="0" y1="0" x2="720" y2="0" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+    <text y="40" class="section-title">💼 Enterprise Work</text>
+    
+    <g transform="translate(0, 65)">
+      <rect width="350" height="140" rx="16" class="card-bg"/>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/square-logo.png" x="20" y="20" width="48" height="48"/>
+      <text x="80" y="40" class="project-title">Square</text>
+      <text x="80" y="65" class="project-desc">Core iOS infrastructure, AI tooling,</text>
+      <text x="80" y="85" class="project-desc">and transaction security for</text>
+      <text x="80" y="105" class="project-desc">millions of sellers.</text>
+    </g>
+    
+    <g transform="translate(370, 65)">
+      <rect width="350" height="140" rx="16" class="card-bg"/>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/willowtree-logo.svg" x="20" y="20" width="48" height="48"/>
+      <text x="80" y="40" class="project-title">WillowTree</text>
+      <text x="80" y="65" class="project-desc">Architecting digital experiences</text>
+      <text x="80" y="85" class="project-desc">for FOX, PepsiCo, and other</text>
+      <text x="80" y="105" class="project-desc">global brands.</text>
+    </g>
+  </g>
 
-      <div class="section-title">🥇 Project Hall of Fame</div>
-      <div class="card-grid">
-        <div class="card project-card">
-          <div class="project-header">
-            <img class="project-icon" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/chosen-one.png" alt="Chosen One"/>
-            <h3 class="project-title">Chosen One</h3>
-          </div>
-          <p class="project-desc">Fast, no-nonsense finger chooser for when the group can't decide. Touch the screen. Get picked.</p>
-          <div class="project-links">
-            <a href="https://fingerchooser.app">fingerchooser.app</a>
-            <a href="https://apps.apple.com/us/app/chosen-one/id6756823477">
-              <img class="app-store-badge" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/download-on-the-app-store.svg" alt="App Store"/>
-            </a>
-          </div>
-        </div>
+  <!-- Project Hall of Fame Section -->
+  <g transform="translate(40, 750)">
+    <line x1="0" y1="0" x2="720" y2="0" stroke="rgba(255,255,255,0.1)" stroke-width="2"/>
+    <text y="40" class="section-title">🥇 Project Hall of Fame</text>
+    
+    <g transform="translate(0, 65)">
+      <rect width="350" height="200" rx="20" class="card-bg" fill="rgba(13, 17, 23, 0.6)"/>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/chosen-one.png" x="20" y="20" width="64" height="64"/>
+      <text x="100" y="45" class="project-title">Chosen One</text>
+      <text x="100" y="75" class="project-desc">Fast, no-nonsense finger chooser.</text>
+      <text x="100" y="95" class="project-desc">Touch the screen. Get picked.</text>
+      <text x="20" y="135" class="link-text">fingerchooser.app</text>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/download-on-the-app-store.svg" x="20" y="150" height="32"/>
+    </g>
 
-        <div class="card project-card">
-          <div class="project-header">
-            <img class="project-icon" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/emochi.png" alt="Emochi"/>
-            <h3 class="project-title">Emochi</h3>
-          </div>
-          <p class="project-desc">Lightning-fast emoji utility for macOS. The system-wide picker you always wanted.</p>
-          <div class="project-links">
-            <a href="https://apps.apple.com/us/app/emochi-lighting-fast-emojis/id6450970369?mt=12">
-              <img class="app-store-badge" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/download-on-the-app-store.svg" alt="App Store"/>
-            </a>
-          </div>
-        </div>
+    <g transform="translate(370, 65)">
+      <rect width="350" height="200" rx="20" class="card-bg" fill="rgba(13, 17, 23, 0.6)"/>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/emochi.png" x="20" y="20" width="64" height="64"/>
+      <text x="100" y="45" class="project-title">Emochi</text>
+      <text x="100" y="75" class="project-desc">Lightning-fast emoji utility for</text>
+      <text x="100" y="95" class="project-desc">macOS. The picker you wanted.</text>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/download-on-the-app-store.svg" x="20" y="150" height="32"/>
+    </g>
 
-        <div class="card project-card">
-          <div class="project-header">
-            <img class="project-icon" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/recipe-nabber.png" alt="Recipe Nabber"/>
-            <h3 class="project-title">Recipe Nabber</h3>
-          </div>
-          <p class="project-desc">Skip the life stories. Strips ads and popups from blogs so you can just cook.</p>
-          <div class="project-links">
-            <a href="https://apps.apple.com/us/app/recipe-nabber/id1602584893">
-              <img class="app-store-badge" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/download-on-the-app-store.svg" alt="App Store"/>
-            </a>
-          </div>
-        </div>
+    <g transform="translate(0, 285)">
+      <rect width="350" height="200" rx="20" class="card-bg" fill="rgba(13, 17, 23, 0.6)"/>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/recipe-nabber.png" x="20" y="20" width="64" height="64"/>
+      <text x="100" y="45" class="project-title">Recipe Nabber</text>
+      <text x="100" y="75" class="project-desc">Skip the life stories. Strips ads</text>
+      <text x="100" y="95" class="project-desc">and popups so you can cook.</text>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/download-on-the-app-store.svg" x="20" y="150" height="32"/>
+    </g>
 
-        <div class="card project-card">
-          <div class="project-header">
-            <img class="project-icon" src="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/changelog.png" alt="Taipo"/>
-            <h3 class="project-title">Taipo</h3>
-          </div>
-          <p class="project-desc">AI-powered CLI that catches and fixes command typos before they break your flow.</p>
-          <div class="project-links">
-            <a href="https://github.com/pg8wood/taipo">View Source</a>
-          </div>
-        </div>
-      </div>
+    <g transform="translate(370, 285)">
+      <rect width="350" height="200" rx="20" class="card-bg" fill="rgba(13, 17, 23, 0.6)"/>
+      <text x="25" y="45" class="project-title">Taipo</text>
+      <text x="25" y="75" class="project-desc">AI-powered CLI that catches and</text>
+      <text x="25" y="95" class="project-desc">fixes command typos via LLMs.</text>
+      <text x="25" y="160" class="link-text">github.com/pg8wood/taipo</text>
+    </g>
 
-    </div>
-  </foreignObject>
+    <g transform="translate(0, 505)">
+      <rect width="350" height="140" rx="20" class="card-bg" fill="rgba(13, 17, 23, 0.6)"/>
+      <text x="25" y="45" class="project-title">slog</text>
+      <text x="25" y="75" class="project-desc">Automate your iOS Simulator</text>
+      <text x="25" y="95" class="project-desc">login flows and get back to work.</text>
+      <text x="25" y="120" class="link-text">github.com/pg8wood/slog</text>
+    </g>
 
-  <!-- rare random satellite -->
+    <g transform="translate(370, 505)">
+      <rect width="350" height="140" rx="20" class="card-bg" fill="rgba(13, 17, 23, 0.6)"/>
+      <image href="https://raw.githubusercontent.com/pg8wood/pg8wood/main/images/changelog.png" x="20" y="20" width="48" height="48"/>
+      <text x="80" y="45" class="project-title">Changelog Generator</text>
+      <text x="80" y="75" class="project-desc">Curbs cumbersome conflicts.</text>
+      <text x="80" y="95" class="project-desc">Built for high-velocity teams.</text>
+    </g>
+  </g>
+
   <g id="satellite" transform="translate(-80,420)">
     <rect x="-6" y="-4" width="12" height="8" rx="2" fill="#b6c2d0" stroke="#e6edf3" stroke-width="0.6"/>
     <rect x="-18" y="-3.5" width="10" height="7" rx="1" fill="#6aa3ff" opacity="0.9"/>
