@@ -1,9 +1,7 @@
 <!-- 🙏 https://pragmaticpineapple.com/adding-custom-html-and-css-to-github-readme/-->
 
 <div align="center">
-  <a href="https://patrickgatewood.com">
-    <img src="svgHtmlHack.svg" width="800" alt="Patrick Gatewood - Senior iOS Engineer & Indie App Maker."/>
-  </a>
+  <img src="svgHtmlHack.svg" width="800" alt="Patrick Gatewood - Senior iOS Engineer & Indie App Maker."/>
 </div>
 
 <br/>
